@@ -1,0 +1,131 @@
+/* Typography imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+*{
+  margin:0 ;
+  padding: 0;  
+}
+img{
+  width: 100%;
+}
+
+body{
+  background-color:ivory;
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', serif;
+}
+
+p, a {
+    font-family: monospace;
+  }
+  
+  /* Generic styles */
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    border-radius: .25rem;
+    transition: all .3s;
+  }
+  
+  a:hover {
+    opacity: .6;
+    font-style: bold;
+    font-size:1.2em;
+  }
+.container{
+  background: url(/assets/img/dessert.jpg) center;
+  background-size: cover;
+  background-position:center;
+}
+.header {
+    display: grid;
+    grid-template-areas: 
+    'hero hero hero';
+    min-height: 250px;
+    padding: 4rem 2rem;
+    align-items: center;
+}
+.heading{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:4rem;
+  text-align: center;
+  color:ivory;
+}
+.sub-heading{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align:center;
+  color:darkblue;
+  font-size:2rem;
+  margin-top:3px;
+}
+.hero{
+  grid-area:hero;
+  padding:50px;
+}
+.navbar{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  padding-left:100px;
+  padding-right:100px;
+  padding-top:20px;
+}
+
+.navbar .brand{
+  font-size:1.4rem;
+  color:ivory;
+
+}
+.menu-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+  font-size:1.2rem;
+  font-style:bold;
+}
+
+
+.container-tableau{
+  display:grid;
+  padding:30px;
+}
+
+@media only screen and (min-width:400px) and (max-width:521px){
+  .tablet,.desktop{
+    display:none;
+  }
+}
+
+@media only screen and (min-width:522px) and (max-width:760apx){
+  .phone,.desktop{
+    display:none;
+  }
+}
+
+@media only screen and (min-width:1000px){
+  .phone,.tablet{
+    display:none;
+  }
+}
+
+hr.rounded {
+  border-top: 2px solid #bbb;
+  border-radius: 2px;
+}
+
+.tableaufoot{
+  width: 100%;
+  position:bottom;
+  bottom: 10;
+  left: 0;
+  padding:10px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:sienna;
+}
