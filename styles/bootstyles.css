@@ -39,7 +39,7 @@ a {
     font-size:1.2em;
   }
 .container{
-  background: url(/assets/img/dessert.jpg) center;
+  background: url(../assets/img/dessert.jpg) center;
   background-size: cover;
   background-position:center;
 }
